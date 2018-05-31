@@ -32,6 +32,10 @@ class DocumentPickerUtil {
   static pdf() {
     return (Platform.OS === 'android') ? "application/pdf" : "com.adobe.pdf";
   }
+  
+  static gpx() {
+    return (Platform.OS === 'android') ? "application/gpx+xml" : "com.adobe.gpslib.GPX";
+  }
 }
 
 module.exports = {DocumentPickerUtil, DocumentPicker};
